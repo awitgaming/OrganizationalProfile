@@ -39,16 +39,16 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.button1 = new System.Windows.Forms.Button();
+            this.txtStudentNo = new System.Windows.Forms.TextBox();
+            this.txtLastName = new System.Windows.Forms.TextBox();
+            this.txtAge = new System.Windows.Forms.TextBox();
+            this.txtFirstName = new System.Windows.Forms.TextBox();
+            this.txtMiddleInitial = new System.Windows.Forms.TextBox();
+            this.cbGender = new System.Windows.Forms.ComboBox();
+            this.txtContact = new System.Windows.Forms.TextBox();
+            this.datePickerBirthday = new System.Windows.Forms.DateTimePicker();
+            this.btnRegister = new System.Windows.Forms.Button();
+            this.cbPrograms = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -164,90 +164,93 @@
             this.pictureBox1.TabIndex = 11;
             this.pictureBox1.TabStop = false;
             // 
-            // textBox1
+            // txtStudentNo
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.textBox1.Location = new System.Drawing.Point(131, 179);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(270, 30);
-            this.textBox1.TabIndex = 12;
+            this.txtStudentNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtStudentNo.Location = new System.Drawing.Point(131, 179);
+            this.txtStudentNo.Name = "txtStudentNo";
+            this.txtStudentNo.Size = new System.Drawing.Size(270, 30);
+            this.txtStudentNo.TabIndex = 12;
             // 
-            // textBox2
+            // txtLastName
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.textBox2.Location = new System.Drawing.Point(131, 247);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(270, 30);
-            this.textBox2.TabIndex = 13;
+            this.txtLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtLastName.Location = new System.Drawing.Point(131, 247);
+            this.txtLastName.Name = "txtLastName";
+            this.txtLastName.Size = new System.Drawing.Size(270, 30);
+            this.txtLastName.TabIndex = 13;
             // 
-            // textBox3
+            // txtAge
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.textBox3.Location = new System.Drawing.Point(131, 309);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(168, 30);
-            this.textBox3.TabIndex = 14;
+            this.txtAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtAge.Location = new System.Drawing.Point(131, 309);
+            this.txtAge.Name = "txtAge";
+            this.txtAge.Size = new System.Drawing.Size(168, 30);
+            this.txtAge.TabIndex = 14;
             // 
-            // textBox4
+            // txtFirstName
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.textBox4.Location = new System.Drawing.Point(538, 179);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(361, 30);
-            this.textBox4.TabIndex = 15;
+            this.txtFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtFirstName.Location = new System.Drawing.Point(538, 247);
+            this.txtFirstName.Name = "txtFirstName";
+            this.txtFirstName.Size = new System.Drawing.Size(301, 30);
+            this.txtFirstName.TabIndex = 16;
             // 
-            // textBox5
+            // txtMiddleInitial
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.textBox5.Location = new System.Drawing.Point(538, 247);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(301, 30);
-            this.textBox5.TabIndex = 16;
+            this.txtMiddleInitial.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtMiddleInitial.Location = new System.Drawing.Point(905, 247);
+            this.txtMiddleInitial.Name = "txtMiddleInitial";
+            this.txtMiddleInitial.Size = new System.Drawing.Size(92, 30);
+            this.txtMiddleInitial.TabIndex = 17;
             // 
-            // textBox6
+            // cbGender
             // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.textBox6.Location = new System.Drawing.Point(905, 247);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(92, 30);
-            this.textBox6.TabIndex = 17;
+            this.cbGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.cbGender.FormattingEnabled = true;
+            this.cbGender.Location = new System.Drawing.Point(538, 305);
+            this.cbGender.Name = "cbGender";
+            this.cbGender.Size = new System.Drawing.Size(209, 33);
+            this.cbGender.TabIndex = 18;
             // 
-            // comboBox1
+            // txtContact
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(538, 305);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(209, 33);
-            this.comboBox1.TabIndex = 18;
+            this.txtContact.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtContact.Location = new System.Drawing.Point(630, 383);
+            this.txtContact.Name = "txtContact";
+            this.txtContact.Size = new System.Drawing.Size(219, 30);
+            this.txtContact.TabIndex = 19;
             // 
-            // textBox7
+            // datePickerBirthday
             // 
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.textBox7.Location = new System.Drawing.Point(630, 383);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(219, 30);
-            this.textBox7.TabIndex = 19;
+            this.datePickerBirthday.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.datePickerBirthday.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.datePickerBirthday.Location = new System.Drawing.Point(131, 391);
+            this.datePickerBirthday.Name = "datePickerBirthday";
+            this.datePickerBirthday.Size = new System.Drawing.Size(338, 30);
+            this.datePickerBirthday.TabIndex = 20;
             // 
-            // dateTimePicker1
+            // btnRegister
             // 
-            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.dateTimePicker1.Location = new System.Drawing.Point(131, 391);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(245, 22);
-            this.dateTimePicker1.TabIndex = 20;
+            this.btnRegister.BackColor = System.Drawing.Color.Navy;
+            this.btnRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btnRegister.ForeColor = System.Drawing.Color.White;
+            this.btnRegister.Location = new System.Drawing.Point(416, 480);
+            this.btnRegister.Name = "btnRegister";
+            this.btnRegister.Size = new System.Drawing.Size(166, 51);
+            this.btnRegister.TabIndex = 21;
+            this.btnRegister.Text = "Register";
+            this.btnRegister.UseVisualStyleBackColor = false;
+            this.btnRegister.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button1
+            // cbPrograms
             // 
-            this.button1.BackColor = System.Drawing.Color.Navy;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(416, 480);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(166, 51);
-            this.button1.TabIndex = 21;
-            this.button1.Text = "Register";
-            this.button1.UseVisualStyleBackColor = false;
+            this.cbPrograms.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.cbPrograms.FormattingEnabled = true;
+            this.cbPrograms.Location = new System.Drawing.Point(538, 176);
+            this.cbPrograms.Name = "cbPrograms";
+            this.cbPrograms.Size = new System.Drawing.Size(361, 33);
+            this.cbPrograms.TabIndex = 22;
             // 
             // OrganizationalProfile
             // 
@@ -255,16 +258,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Yellow;
             this.ClientSize = new System.Drawing.Size(1009, 568);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.cbPrograms);
+            this.Controls.Add(this.btnRegister);
+            this.Controls.Add(this.datePickerBirthday);
+            this.Controls.Add(this.txtContact);
+            this.Controls.Add(this.cbGender);
+            this.Controls.Add(this.txtMiddleInitial);
+            this.Controls.Add(this.txtFirstName);
+            this.Controls.Add(this.txtAge);
+            this.Controls.Add(this.txtLastName);
+            this.Controls.Add(this.txtStudentNo);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
@@ -298,16 +301,16 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtStudentNo;
+        private System.Windows.Forms.TextBox txtLastName;
+        private System.Windows.Forms.TextBox txtAge;
+        private System.Windows.Forms.TextBox txtFirstName;
+        private System.Windows.Forms.TextBox txtMiddleInitial;
+        private System.Windows.Forms.ComboBox cbGender;
+        private System.Windows.Forms.TextBox txtContact;
+        private System.Windows.Forms.DateTimePicker datePickerBirthday;
+        private System.Windows.Forms.Button btnRegister;
+        private System.Windows.Forms.ComboBox cbPrograms;
     }
 }
 
