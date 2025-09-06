@@ -12,6 +12,11 @@ namespace OrganizationalProfile
 {
     public partial class Confirmation : Form
     {
+        private string _FullName;
+        private int _Age;
+        private long _ContactNo;
+        private long _StudentNo;
+
         public Confirmation()
         {
             InitializeComponent();
@@ -23,6 +28,16 @@ namespace OrganizationalProfile
         }
 
         private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Confirmation_Load(object sender, EventArgs e)
         {
 
         }
