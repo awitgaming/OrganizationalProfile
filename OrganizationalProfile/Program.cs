@@ -16,7 +16,7 @@ namespace OrganizationalProfile
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new OrganizationalProfile());
+            Application.Run(new frmRegistration());
         }
     }
 }

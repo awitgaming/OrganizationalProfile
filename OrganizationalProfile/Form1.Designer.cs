@@ -1,6 +1,6 @@
 ﻿namespace OrganizationalProfile
 {
-    partial class OrganizationalProfile
+    partial class frmRegistration
     {
         /// <summary>
         /// Required designer variable.
@@ -44,8 +44,8 @@
             this.txtFirstName = new System.Windows.Forms.TextBox();
             this.txtMiddleInitial = new System.Windows.Forms.TextBox();
             this.cbGender = new System.Windows.Forms.ComboBox();
-            this.txtContact = new System.Windows.Forms.TextBox();
-            this.datePickerBirthday = new System.Windows.Forms.DateTimePicker();
+            this.txtContactNo = new System.Windows.Forms.TextBox();
+            this.datePickerBirtday = new System.Windows.Forms.DateTimePicker();
             this.btnRegister = new System.Windows.Forms.Button();
             this.cbPrograms = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -204,22 +204,22 @@
             this.cbGender.Size = new System.Drawing.Size(209, 33);
             this.cbGender.TabIndex = 18;
             // 
-            // txtContact
+            // txtContactNo
             // 
-            this.txtContact.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtContact.Location = new System.Drawing.Point(630, 383);
-            this.txtContact.Name = "txtContact";
-            this.txtContact.Size = new System.Drawing.Size(219, 30);
-            this.txtContact.TabIndex = 19;
+            this.txtContactNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtContactNo.Location = new System.Drawing.Point(630, 383);
+            this.txtContactNo.Name = "txtContactNo";
+            this.txtContactNo.Size = new System.Drawing.Size(219, 30);
+            this.txtContactNo.TabIndex = 19;
             // 
-            // datePickerBirthday
+            // datePickerBirtday
             // 
-            this.datePickerBirthday.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.datePickerBirthday.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.datePickerBirthday.Location = new System.Drawing.Point(131, 391);
-            this.datePickerBirthday.Name = "datePickerBirthday";
-            this.datePickerBirthday.Size = new System.Drawing.Size(338, 30);
-            this.datePickerBirthday.TabIndex = 20;
+            this.datePickerBirtday.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.datePickerBirtday.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.datePickerBirtday.Location = new System.Drawing.Point(131, 391);
+            this.datePickerBirtday.Name = "datePickerBirtday";
+            this.datePickerBirtday.Size = new System.Drawing.Size(338, 30);
+            this.datePickerBirtday.TabIndex = 20;
             // 
             // btnRegister
             // 
@@ -253,7 +253,7 @@
             this.pictureBox1.TabIndex = 11;
             this.pictureBox1.TabStop = false;
             // 
-            // OrganizationalProfile
+            // frmRegistration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -261,8 +261,8 @@
             this.ClientSize = new System.Drawing.Size(1009, 568);
             this.Controls.Add(this.cbPrograms);
             this.Controls.Add(this.btnRegister);
-            this.Controls.Add(this.datePickerBirthday);
-            this.Controls.Add(this.txtContact);
+            this.Controls.Add(this.datePickerBirtday);
+            this.Controls.Add(this.txtContactNo);
             this.Controls.Add(this.cbGender);
             this.Controls.Add(this.txtMiddleInitial);
             this.Controls.Add(this.txtFirstName);
@@ -280,7 +280,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "OrganizationalProfile";
+            this.Name = "frmRegistration";
             this.Text = "Organizational Profile";
             this.Load += new System.EventHandler(this.OrganizationalProfile_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -308,8 +308,8 @@
         private System.Windows.Forms.TextBox txtFirstName;
         private System.Windows.Forms.TextBox txtMiddleInitial;
         private System.Windows.Forms.ComboBox cbGender;
-        private System.Windows.Forms.TextBox txtContact;
-        private System.Windows.Forms.DateTimePicker datePickerBirthday;
+        private System.Windows.Forms.TextBox txtContactNo;
+        private System.Windows.Forms.DateTimePicker datePickerBirtday;
         private System.Windows.Forms.Button btnRegister;
         private System.Windows.Forms.ComboBox cbPrograms;
     }
