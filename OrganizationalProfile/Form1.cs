@@ -83,6 +83,19 @@ namespace OrganizationalProfile
                 cbPrograms.Items.Add(ListOfProgram[i].ToString());
             }
 
+            string[] GenderList = new string[] {
+                "Male",
+                "Female",
+                "Gooding",
+                "Yombot",
+                "Non-Binary",
+                "Prefer not to Say"
+            };
+            for(int i = 0;i < 6; i++)
+            {
+                cbGender.Items.Add(GenderList[i].ToString());
+            }
+
         }
 
         private void label10_Click(object sender, EventArgs e)

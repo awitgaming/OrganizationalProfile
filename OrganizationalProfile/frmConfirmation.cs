@@ -39,7 +39,13 @@ namespace OrganizationalProfile
 
         private void Confirmation_Load(object sender, EventArgs e)
         {
-           
+            lblStudentNo.Text = StudentInformationClass.SetStudentNo.ToString();
+            lblName.Text = StudentInformationClass.SetFullName;
+            lblProgram.Text = StudentInformationClass.SetProgram;
+            lblBirthday.Text = StudentInformationClass.SetBirthday.ToString();
+            lblGender.Text = StudentInformationClass.SetGender;
+            lblContactNo.Text = StudentInformationClass.SetContactNo.ToString();
+            lblAge.Text = StudentInformationClass.SetAge.ToString();
 
         }
 
