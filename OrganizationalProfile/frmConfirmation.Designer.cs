@@ -36,14 +36,14 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
+            this.btnSubmit = new System.Windows.Forms.Button();
+            this.lblStudentNo = new System.Windows.Forms.Label();
+            this.lblName = new System.Windows.Forms.Label();
+            this.lblProgram = new System.Windows.Forms.Label();
+            this.lblAge = new System.Windows.Forms.Label();
+            this.lblBirthday = new System.Windows.Forms.Label();
+            this.lblGender = new System.Windows.Forms.Label();
+            this.lblContactNo = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -129,87 +129,87 @@
             this.label7.TabIndex = 7;
             this.label7.Text = "Contact No.:";
             // 
-            // button1
+            // btnSubmit
             // 
-            this.button1.BackColor = System.Drawing.Color.Navy;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(219, 597);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(127, 55);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Submit";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnSubmit.BackColor = System.Drawing.Color.Navy;
+            this.btnSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btnSubmit.ForeColor = System.Drawing.Color.White;
+            this.btnSubmit.Location = new System.Drawing.Point(219, 597);
+            this.btnSubmit.Name = "btnSubmit";
+            this.btnSubmit.Size = new System.Drawing.Size(127, 55);
+            this.btnSubmit.TabIndex = 8;
+            this.btnSubmit.Text = "Submit";
+            this.btnSubmit.UseVisualStyleBackColor = false;
             // 
-            // label8
+            // lblStudentNo
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.label8.Location = new System.Drawing.Point(213, 129);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(18, 26);
-            this.label8.TabIndex = 9;
-            this.label8.Text = ".";
+            this.lblStudentNo.AutoSize = true;
+            this.lblStudentNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.lblStudentNo.Location = new System.Drawing.Point(213, 129);
+            this.lblStudentNo.Name = "lblStudentNo";
+            this.lblStudentNo.Size = new System.Drawing.Size(18, 26);
+            this.lblStudentNo.TabIndex = 9;
+            this.lblStudentNo.Text = ".";
             // 
-            // label9
+            // lblName
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.label9.Location = new System.Drawing.Point(213, 196);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(18, 26);
-            this.label9.TabIndex = 10;
-            this.label9.Text = ".";
+            this.lblName.AutoSize = true;
+            this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.lblName.Location = new System.Drawing.Point(213, 196);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(18, 26);
+            this.lblName.TabIndex = 10;
+            this.lblName.Text = ".";
             // 
-            // label10
+            // lblProgram
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.label10.Location = new System.Drawing.Point(214, 260);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(18, 26);
-            this.label10.TabIndex = 11;
-            this.label10.Text = ".";
+            this.lblProgram.AutoSize = true;
+            this.lblProgram.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.lblProgram.Location = new System.Drawing.Point(214, 260);
+            this.lblProgram.Name = "lblProgram";
+            this.lblProgram.Size = new System.Drawing.Size(18, 26);
+            this.lblProgram.TabIndex = 11;
+            this.lblProgram.Text = ".";
             // 
-            // label11
+            // lblAge
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.label11.Location = new System.Drawing.Point(214, 322);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(18, 26);
-            this.label11.TabIndex = 12;
-            this.label11.Text = ".";
+            this.lblAge.AutoSize = true;
+            this.lblAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.lblAge.Location = new System.Drawing.Point(214, 322);
+            this.lblAge.Name = "lblAge";
+            this.lblAge.Size = new System.Drawing.Size(18, 26);
+            this.lblAge.TabIndex = 12;
+            this.lblAge.Text = ".";
             // 
-            // label12
+            // lblBirthday
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.label12.Location = new System.Drawing.Point(214, 391);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(18, 26);
-            this.label12.TabIndex = 13;
-            this.label12.Text = ".";
+            this.lblBirthday.AutoSize = true;
+            this.lblBirthday.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.lblBirthday.Location = new System.Drawing.Point(214, 391);
+            this.lblBirthday.Name = "lblBirthday";
+            this.lblBirthday.Size = new System.Drawing.Size(18, 26);
+            this.lblBirthday.TabIndex = 13;
+            this.lblBirthday.Text = ".";
             // 
-            // label13
+            // lblGender
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.label13.Location = new System.Drawing.Point(214, 456);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(18, 26);
-            this.label13.TabIndex = 14;
-            this.label13.Text = ".";
+            this.lblGender.AutoSize = true;
+            this.lblGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.lblGender.Location = new System.Drawing.Point(214, 456);
+            this.lblGender.Name = "lblGender";
+            this.lblGender.Size = new System.Drawing.Size(18, 26);
+            this.lblGender.TabIndex = 14;
+            this.lblGender.Text = ".";
             // 
-            // label14
+            // lblContactNo
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.label14.Location = new System.Drawing.Point(213, 524);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(18, 26);
-            this.label14.TabIndex = 15;
-            this.label14.Text = ".";
+            this.lblContactNo.AutoSize = true;
+            this.lblContactNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.lblContactNo.Location = new System.Drawing.Point(213, 524);
+            this.lblContactNo.Name = "lblContactNo";
+            this.lblContactNo.Size = new System.Drawing.Size(18, 26);
+            this.lblContactNo.TabIndex = 15;
+            this.lblContactNo.Text = ".";
             // 
             // Confirmation
             // 
@@ -217,14 +217,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Yellow;
             this.ClientSize = new System.Drawing.Size(586, 686);
-            this.Controls.Add(this.label14);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.lblContactNo);
+            this.Controls.Add(this.lblGender);
+            this.Controls.Add(this.lblBirthday);
+            this.Controls.Add(this.lblAge);
+            this.Controls.Add(this.lblProgram);
+            this.Controls.Add(this.lblName);
+            this.Controls.Add(this.lblStudentNo);
+            this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -251,13 +251,13 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Button btnSubmit;
+        private System.Windows.Forms.Label lblStudentNo;
+        private System.Windows.Forms.Label lblName;
+        private System.Windows.Forms.Label lblProgram;
+        private System.Windows.Forms.Label lblAge;
+        private System.Windows.Forms.Label lblBirthday;
+        private System.Windows.Forms.Label lblGender;
+        private System.Windows.Forms.Label lblContactNo;
     }
 }
