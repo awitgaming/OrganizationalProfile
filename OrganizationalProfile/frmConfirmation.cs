@@ -8,16 +8,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace OrganizationalProfile
 {
-    public partial class Confirmation : Form
+    public partial class frmConfirmation : Form
     {
         private string _FullName;
         private int _Age;
         private long _ContactNo;
         private long _StudentNo;
 
-        public Confirmation()
+        public frmConfirmation()
         {
             InitializeComponent();
         }
@@ -38,6 +39,12 @@ namespace OrganizationalProfile
         }
 
         private void Confirmation_Load(object sender, EventArgs e)
+        {
+           
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

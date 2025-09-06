@@ -38,7 +38,6 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtStudentNo = new System.Windows.Forms.TextBox();
             this.txtLastName = new System.Windows.Forms.TextBox();
             this.txtAge = new System.Windows.Forms.TextBox();
@@ -49,6 +48,7 @@
             this.datePickerBirthday = new System.Windows.Forms.DateTimePicker();
             this.btnRegister = new System.Windows.Forms.Button();
             this.cbPrograms = new System.Windows.Forms.ComboBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -154,16 +154,6 @@
             this.label11.TabIndex = 10;
             this.label11.Text = "Contact No.";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::OrganizationalProfile.Properties.Resources.Logo_STI;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(190, 91);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 11;
-            this.pictureBox1.TabStop = false;
-            // 
             // txtStudentNo
             // 
             this.txtStudentNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
@@ -171,6 +161,7 @@
             this.txtStudentNo.Name = "txtStudentNo";
             this.txtStudentNo.Size = new System.Drawing.Size(270, 30);
             this.txtStudentNo.TabIndex = 12;
+            this.txtStudentNo.TextChanged += new System.EventHandler(this.txtStudentNo_TextChanged);
             // 
             // txtLastName
             // 
@@ -251,6 +242,16 @@
             this.cbPrograms.Name = "cbPrograms";
             this.cbPrograms.Size = new System.Drawing.Size(361, 33);
             this.cbPrograms.TabIndex = 22;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::OrganizationalProfile.Properties.Resources.Logo_STI;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(190, 91);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
             // 
             // OrganizationalProfile
             // 

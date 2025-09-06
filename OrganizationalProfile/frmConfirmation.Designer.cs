@@ -1,6 +1,6 @@
 ﻿namespace OrganizationalProfile
 {
-    partial class Confirmation
+    partial class frmConfirmation
     {
         /// <summary>
         /// Required designer variable.
@@ -56,6 +56,7 @@
             this.label1.Size = new System.Drawing.Size(133, 26);
             this.label1.TabIndex = 0;
             this.label1.Text = "Student No.:";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // pictureBox1
             // 
@@ -212,7 +213,7 @@
             this.lblContactNo.TabIndex = 15;
             this.lblContactNo.Text = ".";
             // 
-            // Confirmation
+            // frmConfirmation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -234,8 +235,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
-            this.Name = "Confirmation";
-            this.Text = "frmConfirmation";
+            this.Name = "frmConfirmation";
+            this.Text = "Confirmation";
             this.Load += new System.EventHandler(this.Confirmation_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
