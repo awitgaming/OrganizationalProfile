@@ -30,20 +30,30 @@ namespace OrganizationalProfile
 
         public long StudentNumber(string studNum)
         {
+            //am trying to do is to look like STI registration and it will start in 02000
+            if (Regex.IsMatch(studNum, @"^02000[0-9]{6}$"))
+            {
+                _StudentNo = long.Parse(studNum);
+            } else
+            {
+                throw new FormatException("Student number must be start in 02000 and 6 digits");
+            }
 
-            _StudentNo = long.Parse(studNum);
-
-            return _StudentNo;
+                return _StudentNo;
         }
 
         public long ContactNo(string Contact)
         {
-            if (Regex.IsMatch(Contact, @"^[0-9]{10,11}$"))
+            // it will start in 09
+            if (Regex.IsMatch(Contact, @"^09[0-9]{9}$"))
             {
                 _ContactNo = long.Parse(Contact);
+            } else
+            {
+                throw new FormatException("Contact Number must be start in 09 and 10-11 digits");
             }
 
-            return _ContactNo;
+                return _ContactNo;
         }
 
         public string FullName(string LastName, string FirstName, string MiddleInitial)
@@ -51,9 +61,12 @@ namespace OrganizationalProfile
             if (Regex.IsMatch(LastName, @"^[a-zA-Z]+$") || Regex.IsMatch(FirstName, @"^[a-zA-Z]+$") || Regex.IsMatch(MiddleInitial, @"^[a-zA-Z]+$"))
             {
                 _FullName = LastName + ", " + FirstName + ", " + MiddleInitial;
+            } else
+            {
+                throw new ArgumentNullException("Name field must contain only letter and it cannot be blank");
             }
 
-            return _FullName;
+                return _FullName;
         }
 
         public int Age(string age)
@@ -61,9 +74,12 @@ namespace OrganizationalProfile
             if (Regex.IsMatch(age, @"^[0-9]{1,3}$"))
             {
                 _Age = Int32.Parse(age);
+            } else
+            {
+                throw new FormatException("Age must be only 1-3 digits");
             }
 
-            return _Age;
+                return _Age;
         }
 
         private void OrganizationalProfile_Load(object sender, EventArgs e)
@@ -86,12 +102,9 @@ namespace OrganizationalProfile
             string[] GenderList = new string[] {
                 "Male",
                 "Female",
-                "Gooding",
-                "Yombot",
-                "Non-Binary",
                 "Prefer not to Say"
             };
-            for(int i = 0;i < 6; i++)
+            for(int i = 0;i < 3; i++)
             {
                 cbGender.Items.Add(GenderList[i].ToString());
             }
@@ -105,16 +118,38 @@ namespace OrganizationalProfile
 
         private void button1_Click(object sender, EventArgs e)
         {
-            StudentInformationClass.SetFullName = FullName(txtLastName.Text, txtFirstName.Text, txtMiddleInitial.Text);
-            StudentInformationClass.SetStudentNo = StudentNumber(txtStudentNo.Text);
-            StudentInformationClass.SetProgram = cbPrograms.Text;
-            StudentInformationClass.SetGender = cbGender.Text;
-            StudentInformationClass.SetContactNo = ContactNo(txtContactNo.Text);
-            StudentInformationClass.SetAge = Age(txtAge.Text);
-            StudentInformationClass.SetBirthday = datePickerBirtday.Value.ToString("yyyy - MM - dd");
+            try
+            {
+                StudentInformationClass.SetFullName = FullName(txtLastName.Text, txtFirstName.Text, txtMiddleInitial.Text);
+                StudentInformationClass.SetStudentNo = StudentNumber(txtStudentNo.Text);
+                StudentInformationClass.SetProgram = cbPrograms.Text;
+                StudentInformationClass.SetGender = cbGender.Text;
+                StudentInformationClass.SetContactNo = ContactNo(txtContactNo.Text);
+                StudentInformationClass.SetAge = Age(txtAge.Text);
+                StudentInformationClass.SetBirthday = datePickerBirtday.Value.ToString("yyyy - MM - dd");
 
-            frmConfirmation frm = new frmConfirmation();
-            frm.ShowDialog();
+                frmConfirmation frm = new frmConfirmation();
+                frm.ShowDialog();
+            }
+            catch (FormatException ex)
+            {
+                MessageBox.Show(ex.Message,"Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch(ArgumentNullException ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+            catch (OverflowException ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+            catch (IndexOutOfRangeException ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
 
 
         }

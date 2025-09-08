@@ -33,20 +33,21 @@ namespace OrganizationalProfile
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            
+            MessageBox.Show("Registration Successfuly", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
         }
 
         private void Confirmation_Load(object sender, EventArgs e)
         {
-            lblStudentNo.Text = StudentInformationClass.SetStudentNo.ToString();
-            lblName.Text = StudentInformationClass.SetFullName;
-            lblProgram.Text = StudentInformationClass.SetProgram;
-            lblBirthday.Text = StudentInformationClass.SetBirthday.ToString();
-            lblGender.Text = StudentInformationClass.SetGender;
-            lblContactNo.Text = StudentInformationClass.SetContactNo.ToString();
-            lblAge.Text = StudentInformationClass.SetAge.ToString();
 
+                lblStudentNo.Text = StudentInformationClass.SetStudentNo.ToString();
+                lblName.Text = StudentInformationClass.SetFullName;
+                lblProgram.Text = StudentInformationClass.SetProgram;
+                lblBirthday.Text = StudentInformationClass.SetBirthday.ToString();
+                lblGender.Text = StudentInformationClass.SetGender;
+                lblContactNo.Text = StudentInformationClass.SetContactNo.ToString();
+                lblAge.Text = StudentInformationClass.SetAge.ToString();
+ 
         }
 
         private void label1_Click(object sender, EventArgs e)
